@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 
 import style from "./style.module.scss";
 
-export default function Header(){
+const Header = () => {
   return (
     <header>
       <div className={style.container}>
@@ -13,8 +13,11 @@ export default function Header(){
           <Link to="/">Products</Link>
           <Link to="/">Login</Link>
           <Link to="/">Sigin</Link>
+          <Link to="/dashboard">Dashobard</Link>
         </nav>
       </div>
     </header>
   );
 }
+
+export default Header;
